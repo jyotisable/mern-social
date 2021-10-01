@@ -13,9 +13,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jyotisable/mern-social"
+    "url": "https://github.com/shamahoque/mern-social"
   },
-  "homepage": "https://github.com/jyotisable/mern-social",
+  "homepage": "https://github.com/shamahoque/mern-social",
   "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon",
