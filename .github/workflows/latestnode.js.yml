@@ -40,7 +40,7 @@ jobs:
          host: 52.186.55.76
          username: administration
          password: Admin123456789
-         port: 22
+         port: 3000
          script: |
             cd ~/node-github-demo
             git pull origin master
