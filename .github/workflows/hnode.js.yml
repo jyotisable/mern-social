@@ -27,9 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run build --if-present
-    - run: npm test
-    - run: npm audit
     - run: npm run development 
     
   deploy:
@@ -40,7 +37,7 @@ jobs:
       - name: SSH and deploy node app
         uses: appleboy/ssh-action@master
         with:
-         host: 13.82.62.223
+         host: 52.152.147.241
          username: administration
          key: Pass@123456789
          port: 22
