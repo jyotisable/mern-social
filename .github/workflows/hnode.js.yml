@@ -37,7 +37,7 @@ jobs:
       - name: SSH and deploy node app
         uses: root/ssh-action@master
         with:
-         host: 52.152.147.241
+         host: 52.168.92.143
          username: administration
          password: Pass@123456789
          port: 22
