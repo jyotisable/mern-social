@@ -35,7 +35,7 @@ jobs:
 
      steps:
       - name: SSH and deploy node app
-        uses: administration/ssh-action@master
+        uses: root/ssh-action@master
         with:
          host: 52.152.147.241
          username: administration
