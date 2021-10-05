@@ -30,5 +30,4 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
           npm run development 
-          - RUN npm install --prefix assets && \  
-             npm --prefix ./assets ci --progress=false --no-audit --loglevel=error
+          
