@@ -37,9 +37,9 @@ jobs:
       - name: SSH and deploy node app
         uses: appleboy/ssh-action@master
         with:
-         host: 40.76.197.130
+         host: 52.186.55.76
          username: administration
-         password: Pass123456789
+         password: Admin123456789
          port: 22
          script: |
             cd ~/node-github-demo
