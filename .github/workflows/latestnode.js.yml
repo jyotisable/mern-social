@@ -31,7 +31,6 @@ jobs:
     - run: echo `pwd`  
     - run: echo `whoami`
     - run: git init
-    - run: git remote add origin https://github.com/jyotisable/mern-social
     
   deploy:
      needs: build
