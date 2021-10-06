@@ -39,8 +39,8 @@ jobs:
        uses: fifsky/ssh-action@master
        with:
          host: 52.249.187.26
-         username: administration
-         password: Pass123456789
+         user: administration
+         pass: Pass123456789
          port: 22
          script: |
             cd ~/node-github-demo
