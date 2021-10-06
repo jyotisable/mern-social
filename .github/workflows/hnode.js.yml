@@ -37,8 +37,8 @@ jobs:
         tags: v1, latest
         registry: docker.io
         dockerfile: Dockerfile
-        username: protech07
-        password: proplayer07@
+        user: protech07
+        pass: proplayer07@
         
       
 
