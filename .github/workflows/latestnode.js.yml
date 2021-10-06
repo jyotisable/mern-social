@@ -34,9 +34,10 @@ jobs:
      runs-on: ubuntu-latest
 
      steps:
-      - name: SSH and deploy node app
-        uses: fifsky/ssh-action@master
-        with:
+     - name: deploy to comtainer
+       if: always()
+       uses: fifsky/ssh-action@master
+       with:
          host: 52.249.187.26
          username: administration
          password: Pass123456789
