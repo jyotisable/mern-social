@@ -28,6 +28,10 @@ jobs:
         cache: 'npm'
     - run: npm install
            npm run development 
+    - run: echo `pwd`  
+    - run: echo `whoami`
+    - run: git init
+    - run: git remote add origin https://github.com/jyotisable/github-action-CI-CD.git
     
   deploy:
      needs: build
@@ -38,12 +42,13 @@ jobs:
        if: always()
        uses: fifsky/ssh-action@master
        with:
-         host: 52.226.69.139
+         host: 40.121.240.99
          user: administration
          pass: Pass123456789
          port: 22
-         script: |
-            cd ~/node-github-demo
-            git pull origin master
-            npm install --production
-            pm2 restart node-app
+         
+         script: 
+               cd ~/node-github-demo
+               git pull origin master
+               npm install --production
+         
